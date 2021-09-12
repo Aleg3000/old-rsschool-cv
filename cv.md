@@ -6,3 +6,17 @@
 * E-mail: olejaaaa@gmail.com
 * GitHub: Aleg3000
 * Telegram: Aleg3000
+# About Me
+I work in a subsidiary of Rosatom as a design engineer, engaged in the design of biological protection of nuclear reactors. In my free time I do practically everything related to extreme sports. I have a heightened sense of responsibility and resistance to stress.
+# Skills
+* HTML (Basic)
+* CSS (Basic)
+* JavaScript (Basic)
+* Git
+# Code Example
+```function sayHi() {
+	Return “Hi”;
+}
+Alert(sayHi());
+```
+
