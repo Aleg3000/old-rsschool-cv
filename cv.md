@@ -19,4 +19,10 @@ I work in a subsidiary of Rosatom as a design engineer, engaged in the design of
 }
 Alert(sayHi());
 ```
-
+# Experience
+* 2016-2021 Design engineer. 
+# Education
+* University: NNTU, Nuclear reactors and power plants, specialist degree.
+# Languages
+* Russian - native
+* English - A2
