@@ -14,7 +14,8 @@ I work in a subsidiary of Rosatom as a design engineer, engaged in the design of
 * JavaScript (Basic)
 * Git
 # Code Example
-```function sayHi() {
+```
+function sayHi() {
 	Return “Hi”;
 }
 Alert(sayHi());
