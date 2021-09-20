@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oleg Ganin cv</title>
+    <title>Oleg Ganin CV</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
     <header>
-        <h1 class="left">RSSCHOOL</h1>
-        <h1 class="center">Oleg Ganin</h1>
+        <div class="school">RSSCHOOL</div>
+        <hr>
+        <div>
+        <div>
+        <h1>Oleg Ganin</h1>
+        </div>
+        <div><img src="me.jpg" alt="Photo of me" class="photo">
+        </div>
+        <hr>
+        </div>
     </header>
     <main>
         <section>
-            <h1>Personal Info</h1>
+            <div class='personal'>
+            <h2>Personal Info</h2>
             <ul>
                 <li>Address: Nizhniy Novgorod</li>
                 <li>Phone: +7(999)139-97-16</li>
@@ -22,16 +32,17 @@
                 <li>Github: Aleg3000</li>
                 <li>Telegram: Aleg3000</li>
             </ul>
+        </div>
         </section>
         <section>
-            <h1>About Me</h1>
+            <h2>About Me</h2>
             <p>I work in a subsidiary of Rosatom as a design engineer,
                  engaged in the design of biological protection of nuclear reactors.
                  In my free time I do practically everything related to extreme sports.
                  I have a heightened sense of responsibility and resistance to stress.</p>
         </section>
         <section>
-            <h1>Skills</h1>
+            <h2>Skills</h2>
             <ul>
                 <li>HTML (Basic)</li>
                 <li>CSS (Basic)</li>
@@ -40,28 +51,38 @@
             </ul>
         </section>
         <section>
-            <h1>Code Example</h1>
-            <code>
-                function sayHi() {<br>
-                    return "hi"<br>
-                }<br>
-                alert(sayHi())<br>
+            <h2>Code Example</h2>
+            <div class="code"><code>
+                function disemvowel(str) {<br>
+                    let arr = str.split('')<br>
+                    let result = arr.map(function(item,index){<br>
+                     if ("aeiouAEIOU".includes(item)) {<br>
+                     delete arr[index]<br>
+                     }<br>
+                     else {<br>
+                       return arr[index]<br>
+                     }<br>
+                    })<br>
+                    str = result.join('')<br>
+                     return str<br>
+                   }<br>
             </code>
+        </div>
         </section>
         <section>
-            <h1>Experience</h1>
+            <h2>Experience</h2>
             <ul>
                 <li>2016-2021 Design engineer</li>
             </ul>
         </section>
         <section>
-            <h1>Education</h1>
+            <h2>Education</h2>
             <ul>
                 <li>University: NNTU, Nuclear reactors and power plants, specialist degree</li>
             </ul>
         </section>
         <section>
-            <h1>Languages</h1>
+            <h2>Languages</h2>
             <ul>
                 <li>Russian - native</li>
                 <li>English - A2</li>
@@ -69,10 +90,14 @@
         </section>
     </main>
     <footer>
-        <span class="left"><a href="https://github.com/Aleg3000">My Github</a></span>
-        <span class="right"><a href="https://rs.school/js/"><img src="rs_school_js.svg"
-             width="200px" height="100px" alt="rs-school_js"></a></span>
-        <span class="center">2021</span>
+        <hr>
+        <div class="box-model">
+            <div><a href="https://rs.school/js/" target="_blank"><img src="rs_school_js.svg"
+                width="100%"  alt="rs-school_js"></a></div>
+            <div>2021</div>
+            <div><a href="https://github.com/Aleg3000" target="_blank">My Github</a></div>
+    </div>
     </footer>
+    </div>
 </body>
 </html>
