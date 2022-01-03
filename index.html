@@ -9,8 +9,22 @@
 </head>
 <body>
     <div class="container">
-    <header>
-        <div class="school">RSSCHOOL</div>
+        <header class="header">
+            <div class="container hat">
+                <!-- <div class="rssschool">rsschool</div> -->
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#personal-info" class="nav-link">personal info</a></li>
+                        <li class="nav-item main-link"><a href="#about-me" class="nav-link">about me</a></li>
+                        <li class="nav-item"><a href="#skills" class="nav-link">skills</a></li>
+                        <li class="nav-item"><a href="#code-example" class="nav-link">code example</a></li>
+                        <li class="nav-item"><a href="#experience" class="nav-link">experience</a></li>
+                        <li class="nav-item"><a href="#education" class="nav-link">education</a></li>
+                        <li class="nav-item"><a href="#languages" class="nav-link">languages</a></li>
+                    </ul>
+                </nav>
+            </div>
+                <!-- <div class="school">RSSCHOOL</div> -->
         <hr>
         <div>
         <div>
@@ -23,7 +37,7 @@
     </header>
     <main>
         <section>
-            <div class='personal'>
+            <div class='personal' id="personal-info">
             <h2>Personal Info</h2>
             <ul>
                 <li>Address: Nizhniy Novgorod</li>
@@ -34,14 +48,14 @@
             </ul>
         </div>
         </section>
-        <section>
+        <section id="about-me">
             <h2>About Me</h2>
             <p>I work in a subsidiary of Rosatom as a design engineer,
                  engaged in the design of biological protection of nuclear reactors.
                  In my free time I do practically everything related to extreme sports.
                  I have a heightened sense of responsibility and resistance to stress.</p>
         </section>
-        <section>
+        <section id="skills">
             <h2>Skills</h2>
             <ul>
                 <li>HTML (Basic)</li>
@@ -50,7 +64,7 @@
                 <li>Git (Basic)</li>
             </ul>
         </section>
-        <section>
+        <section id="code-example">
             <h2>Code Example</h2>
             <div class="code"><code>
                 function disemvowel(str) {<br>
@@ -69,19 +83,19 @@
             </code>
         </div>
         </section>
-        <section>
+        <section id="experience">
             <h2>Experience</h2>
             <ul>
                 <li>2016-2021 Design engineer</li>
             </ul>
         </section>
-        <section>
+        <section id="education">
             <h2>Education</h2>
             <ul>
                 <li>University: NNTU, Nuclear reactors and power plants, specialist degree</li>
             </ul>
         </section>
-        <section>
+        <section id="languages">
             <h2>Languages</h2>
             <ul>
                 <li>Russian - native</li>
@@ -93,9 +107,9 @@
         <hr>
         <div class="box-model">
             <div><a href="https://rs.school/js/" target="_blank"><img src="rs_school_js.svg"
-             alt="rs-school_js"></a></div>
+            class="rss" alt="rs-school_js"></a></div>
             <div>2021</div>
-            <div><a href="https://github.com/Aleg3000" target="_blank">My Github</a></div>
+            <div><a href="https://github.com/Aleg3000" class="gh" target="_blank">My Github</a></div>
     </div>
     </footer>
     </div>
