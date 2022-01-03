@@ -1,40 +1,512 @@
-  body {
-    background-color: pink;
-    font-size: 16px;
-    font-weight: normal;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin:  10px 50px;
-  }
+@font-face {
+    font-family: 'Teko';
+    src: url(assets/fonts/Teko-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Teko';
+    src: url(assets/fonts/Teko-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Archivo Narrow';
+    src: url(assets/fonts/ArchivoNarrow-Regular.ttf);
+    font-weight: 400;
+    }
 
-  .container {
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #FFF;
+    max-width: 1600px;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    position: fixed;
+    z-index: 2;
+    min-width: 100vw;
+    max-width: 1600px;
+    top: 0px;
+    background-color: #FEE0F0;
+    padding: 0 15px 0 0;
+    }
+
+.main {
+    background-color: #FEE0F0;
+}
+
+
+a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+
+
+.active-item:hover {
+    text-decoration: underline;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.gitlink:hover {
+    text-decoration: underline;
+}
+
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.container1200 {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.section {
+    border-top: 1px black solid;
+}
+
+.hat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto 10px auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+.burger {
+    display: none;
+    height: 34px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    line-height: 34px;
+    height: 34px;
+    
+}
+
+.nav-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 20px;
+    font-family: Teko, sans-serif;
+    font-weight: 500;
+    line-height: 14px;
+    font-size: 20px;
+}
+
+#last-link {
+    padding-right: 0px;
+}
+
+.main-link {
+    border: 1px solid black;
+    margin: 0px 0px 2px 0px;
+}
+
+.rssschool {
+    text-transform: uppercase;
+    font-family: Teko, sans-serif;
+    font-weight: 700;
+    line-height: 14px;
+    font-size: 20px;
+} 
+
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 320px;
+    font-family: Teko, sans-serif;
+    line-height: 224px;
+    font-weight: 500;
+}
+
+#about-me {
+    border: none;
+    padding: 134px 0 30px 0;
+}
+
+.my-avatar {
+    opacity: 0.8;
+    float: right;
+    position: relative;
+    top: -18px;
+    right: 15px;
+    height: 639px;
+    width: 421px;
+}
+
+.bio {
+    position: relative;
+    left: 295px;
+    width: 329px;
+    height: 168px;
+    margin-top: 15px;
+    font-family: Archivo Narrow, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+
+
+@media (max-width: 1080px) {
+    h1 {
+        font-size: 250px;
+        line-height: 180px;
+    }
+
+    .bio {
+        left: 170px
+    }
+
+    .my-avatar {
+        height: 500px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 920px) {
+    .nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 35px;
+        margin-right: 10px;
+    }
+
+    .burger span, .burger::after, .burger::before {
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        background: #000;
+        margin: 0 auto;
+    }
+
+    .burger span {
+        /* margin: 1px 0; */
+        top: 16px;
+        /* content: ''; */
+    }
+
+    .burger::after, .burger::before {
+        content: '';
+    }
+
+    .burger::after {
+        bottom: 5px;
+    }
+
+    .burger::before {
+        top: 5px;
+    }
+
+
+    h1 {
+        font-size: 195px;
+        line-height: 145px;
+    }
+
+    .bio {
+        left: 65px;
+    }
+
+    .my-avatar {
+        height: 450px;
+        width: 310px;
+    }
+
+
+
+
+
+}
+
+
+.flex-container {
+    min-height: 200px;
     width: 100%;
-   
-  }
+    padding: 30px 0 50px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    
+}
 
-  .photo {
-    width: 200px;
-    border-radius: 30px;
-    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
-  }
 
-  .personal {
-font-family: Arial, Helvetica, sans-serif
-  }
+.arrow {
+    background-image: url(./assets/arrow.svg);
+    width: 166px;
+    height: 33px;
+    margin: 0 74px 0 2px;
+}
 
- .code {
-   background-color: lightgrey;
-   border: 2px solid black;
-   margin: 20px; 
- }
+h2 {
+    font-family: Teko, sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    width: 220px;
+}
 
- .box-model >div {
-   float: left;
-    width: 33%;
-   text-align: center;
-      }
+.contacts {
+    font-family: Archivo Narrow, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    width: 220px;
+}
 
- .school {
-   font-weight: bold;
-      }
+#code-example { 
+    background-color: #FCF9F9;
+    padding: 30px 15px 50px 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
-  
+
+}
+
+code {
+    white-space: pre;
+    font-family: Archivo Narrow, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 530px;
+}
+
+h3 {
+    font-family: Teko, sans-serif;
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 110px;
+    width: 236px;
+}
+
+.footer {
+    background-color: #FCF9F9;
+}
+
+.flex-footer-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 55px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rsschool-footer {
+    background-image: url(./assets/rs_school.svg);
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 125px;
+}
+
+
+.right-footer {
+    display: flex;
+    height: 125px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.footer-info {
+    font-family: Teko, sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+
+@media (max-width: 720px) {
+
+    .container1200 {
+        margin: 0 15px;
+        max-width: 1200px;
+        align-items: center;
+    }
+
+    #about-me {
+        border: none;
+        padding-top: 50px;
+    }
+    
+    .my-avatar {
+        float: none;
+        top: -0px;
+        right: 0px;
+    }
+
+    h1 {
+        margin: 40px 0 15px 0;
+        font-size: 45vw;
+        font-family: Teko, sans-serif;
+        line-height: 35vw;
+        font-weight: 500;
+            }
+
+    .bio {
+        position: relative;
+        left: 0px;
+        width: 100%;
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 19.2px;
+   }
+
+   .flex-container {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    h2 {
+        padding-top: 5px;
+        max-width: 180px;
+        line-height: 30px;
+    }
+
+    .rsschool-footer {
+        background-size: 100%;
+        width: 215px;
+        height: 75px;
+    }
+
+    .right-footer {
+        height: 75px;
+        justify-content: space-between;
+    }
+
+    .footer-info {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    #code-example {
+        flex-wrap: wrap;
+    }
+
+    h3 {
+        font-size: 80px;
+        line-height: 70px;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+    .arrow {
+        width: 137px;
+        background-image: url(./assets/arrow-mini.svg);
+        margin: 0 15px 0 2px;
+    }
+    
+    h2 {
+        max-width: 150px;
+    }
+
+    .footer-info {
+        width: 80px;
+        font-size: 26px;
+        line-height: 22px;
+    }
+
+    .active-item {
+        font-size: 50px;
+    }
+}
+
+
+.burger-menu-active {
+    display: none;
+    background-color: #000;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 4;
+}
+
+.burger-menu-active-list {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.active-item {
+    color: #FEE0F0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 70px;
+    font-family: Teko, sans-serif;
+    font-weight: 500;
+}
+
+.burger-close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-image: url(./assets/close.svg);
+    background-color: #FEE0F0;
+}
+
+
+@media (max-width: 450px) {
+    .arrow {
+        width: 137px;
+        background-image: url(./assets/arrow-mini.svg);
+        margin: 0 15px 0 2px;
+    }
+    
+    h2 {
+        max-width: 150px;
+    }
+
+    .footer-info {
+        width: 80px;
+        font-size: 26px;
+        line-height: 22px;
+    }
+
+    .active-item {
+        font-size: 60px;
+    }
+}

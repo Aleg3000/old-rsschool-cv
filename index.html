@@ -4,100 +4,157 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oleg Ganin CV</title>
+    <title>O.G. CV</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/favicon.ico">
 </head>
 <body>
-    <div class="container">
-    <header>
-        <div class="school">RSSCHOOL</div>
-        <hr>
-        <div>
-        <div>
-        <h1>Oleg Ganin</h1>
-        </div>
-        <div><img src="me.jpg" alt="Photo of me" class="photo">
-        </div>
-        <hr>
+    <header class="header">
+            <div class="container hat">
+            <div class="rssschool">rsschool</div>
+            <div class='burger'>
+                <span></span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item main-link"><a href="#about-me" class="nav-link">about me</a></li>
+                    <li class="nav-item"><a href="#personal-info" class="nav-link">personal info</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">skills</a></li>
+                    <li class="nav-item"><a href="#code-example" class="nav-link">code example</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">experience</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">education</a></li>
+                    <li class="nav-item"><a href="#languages" class="nav-link" id="last-link">languages</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <main>
-        <section>
-            <div class='personal'>
-            <h2>Personal Info</h2>
-            <ul>
-                <li>Address: Nizhniy Novgorod</li>
-                <li>Phone: +7(999)139-97-16</li>
-                <li>E-mail: olejaaaa@gmail.com</li>
-                <li>Github: Aleg3000</li>
-                <li>Telegram: Aleg3000</li>
-            </ul>
+    <main class="main">
+        <div class="container">
+            <section class="section" id="about-me">
+                <div class="container1200">
+                <img src="./assets/me.jpg" class="my-avatar" alt="Oh no! My photo must be here!">
+
+                <h1>oleg<br>ganin</h1>
+                <div class="bio">I work in a subsidiary of Rosatom as a design engineer, engaged in the design of biological protection of nuclear reactors. In my free time I do practically everything related to extreme sports.I have a heightened sense of responsibility and resistance to stress.</div>
+                </div>
+            </section>
+            <section class="section" id="personal-info">
+                <div class="flex-container">
+                <div class="flex-item">
+                    <h2>personal info</h2>
+                </div>
+                <div class="flex-item arrow">
+
+                </div>
+                <div class="flex-item">
+                    <ul class="contacts">
+                        <li>Address: Nizhniy Novgorod</li>
+                        <li>Phone: +7(999)139-97-16</li>
+                        <li>E-mail: olejaaaa@gmail.com</li>
+                        <li>Github: Aleg3000</li>
+                        <li>Telegram: Aleg3000</li>
+                    </ul>
+                </div>
+                </div>
+            </section>
+            <section class="section" id="skills">
+                <div class="flex-container">
+                <div class="flex-item">
+                  <h2>skills</h2>
+                </div>
+                <div class="flex-item arrow">
+
+                </div>
+                <div class="flex-item">
+                    <ul class="contacts">
+                        <li>HTML (Basic)</li>
+                        <li>CSS (Basic)</li>
+                        <li>JavaScript (Basic)</li>
+                        <li>Git (Basic)</li>
+                    </ul>
+                </div>
+                </div>
+            </section>
+            <section class="section" id="code-example">
+                <h3>code<br>example</h3>
+                <code>              function hi() {
+                    alert('hello world')
+                    }</code>
+
+            </section>
+            <section class="section" id="experience">
+                <div class="flex-container">
+                <div class="flex-item">
+                    <h2>experience</h2>
+                </div>
+                <div class="flex-item arrow">
+
+                </div>
+                <div class="flex-item">
+                    <ul class="contacts">
+                        <li>2016-2022 Design engineer</li>
+                    </ul>
+                </div>
+                </div>
+            </section>
+            <section class="section" id="education">
+                <div class="flex-container">
+                <div class="flex-item">
+                    <h2>education</h2>
+                </div>
+                <div class="flex-item arrow">
+
+                </div>
+                <div class="flex-item">
+                    <ul class="contacts">
+                        <li>University: NNTU, Nuclear reactors and power plants, specialist degree</li>
+                    </ul>
+                </div>
+                </div>
+            </section>
+            <section class="section" id="languages">
+                <div class="flex-container">
+                <div class="flex-item">
+                    <h2>languages</h2>
+                </div>
+                <div class="flex-item arrow">
+
+                </div>
+                <div class="flex-item">
+                    <ul class="contacts">
+                        <li>Russian - native</li>
+                        <li>English - A2</li>
+                    </ul>
+                </div>
+                </div>
+            </section>
         </div>
-        </section>
-        <section>
-            <h2>About Me</h2>
-            <p>I work in a subsidiary of Rosatom as a design engineer,
-                 engaged in the design of biological protection of nuclear reactors.
-                 In my free time I do practically everything related to extreme sports.
-                 I have a heightened sense of responsibility and resistance to stress.</p>
-        </section>
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML (Basic)</li>
-                <li>CSS (Basic)</li>
-                <li>JavaScript (Basic)</li>
-                <li>Git (Basic)</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Code Example</h2>
-            <div class="code"><code>
-                function disemvowel(str) {<br>
-                    let arr = str.split('')<br>
-                    let result = arr.map(function(item,index){<br>
-                     if ("aeiouAEIOU".includes(item)) {<br>
-                     delete arr[index]<br>
-                     }<br>
-                     else {<br>
-                       return arr[index]<br>
-                     }<br>
-                    })<br>
-                    str = result.join('')<br>
-                     return str<br>
-                   }<br>
-            </code>
-        </div>
-        </section>
-        <section>
-            <h2>Experience</h2>
-            <ul>
-                <li>2016-2021 Design engineer</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Education</h2>
-            <ul>
-                <li>University: NNTU, Nuclear reactors and power plants, specialist degree</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Languages</h2>
-            <ul>
-                <li>Russian - native</li>
-                <li>English - A2</li>
-            </ul>
-        </section>
     </main>
-    <footer>
-        <hr>
-        <div class="box-model">
-            <div><a href="https://rs.school/js/" target="_blank"><img src="rs_school_js.svg"
-             alt="rs-school_js"></a></div>
-            <div>2021</div>
-            <div><a href="https://github.com/Aleg3000" target="_blank">My Github</a></div>
-    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="flex-footer-container">
+                <a class="flex-footer-item rsschool-footer" href="https://rs.school/js/" target="_blank"></a>
+                <div class="flex-footer-item right-footer">
+                    <div class="footer-info"><a class="gitlink" href="https://github.com/Aleg3000" target="_blank" >my github</a></div>
+                    <div class="footer-info">2021</div>
+                </div>
+            </div>
+        </div>
     </footer>
+    <div class="burger-menu-active">
+        <div class="burger-close-button"></div>
+        <ul class="burger-menu-active-list">
+        <li class="active-item"><a href="#about-me" class="active-item">about me</a></li>
+        <li class="active-item"><a href="#personal-info" class="active-item">personal info</a></li>
+        <li class="active-item"><a href="#skills" class="active-item">skills</a></li>
+        <li class="active-item"><a href="#code-example" class="active-item">code example</a></li>
+        <li class="active-item"><a href="#experience" class="active-item">experience</a></li>
+        <li class="active-item"><a href="#education" class="active-item">education</a></li>
+        <li class="active-item"><a href="#languages" class="active-item">languages</a></li>
+        </ul>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
+
